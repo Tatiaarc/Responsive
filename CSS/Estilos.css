@@ -1,0 +1,295 @@
+/* header Selector
+{
+    background: pink ; Propiedad - Valores ; !important esto es para hacer que alun estilo destaque
+    color: red  
+} */
+body
+{
+    font-family: "Source sans pro", sans-serif; /* Si el nombre del a fuente es de dos o mas palabras, debe llevar comillas*/
+    margin: 0;
+}
+
+h1, /* para aplicar lamismapropiedad a varios selectores diferentes, debo separarlos por coma , o sino lotoma como un selector descendente*/
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    font-family: "Fjalla One", sans-serif;
+    font-weight: normal;/* Peso de la fuente,que tan gruesa va a quedar*/
+    /*font-style: oblique;Estilo, italica..*/
+}
+h1
+{
+    font-size: 40px;
+    line-height: 150% ; /* Se peude dejar el porcentaje,lo toma sobre el tamaño del a fuente, ejemplo 1 + el 50%del tamaño */
+    letter-spacing: -.2px; /*Determina elespacio entre las letras, # positivo se alejan , # negativo se acercan*/
+    /*text-transform: uppercase; /* cambiar de minusculas mayusculas, etc.*/
+    /*text-decoration: wavy; /*decorado del texto*/
+    color: white;
+    /* margin: 100px 520px 70px 30px ; el 520 ayuda a que no se sobrepongan las imagenes */
+    margin: 0;
+}
+h1 strong
+{
+    color: #026fff;
+}
+
+
+.hero
+{
+    height: 300px;
+    /* background-image: url("../images/hero.jpg"); propiedad para agregar imagen como fono */
+    background-color:  #1b2127;
+    /* background-size: 500px 300px;  delimita el tamañao del bg, en este caso de la imagen
+    background-repeat: no-repeat; */
+    /* background-position-x: right; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+}
+.hero_image{
+    object-fit: cover;
+}
+.project{
+    /* border-top: 10px solid red;Borde superior - Debe ir TAMAÑO - TIPO - ESTILO
+    border-right: 10px solid green;
+    border-left: 10px solid orange;
+    border-bottom: 10px solid pink; */
+    /* border-top-color: red; Estas tres propiedades siempre deben estar presentes
+    border-top-width:30px;
+    border-top-style: double;
+    border-bottom-color: pink; Estas tres propiedades siempre deben estar presentes
+    border-bottom-width:30px;
+    border-bottom-style: dashed; */
+    border-radius: 10px;/* Para poner borde redondo*/
+    border: 1px solid grey  ; /*borde normal*/
+    /* border-top-left-radius: 50px; sepuede alterar el borde de cada lado individualmente */
+    /* margin: 10px; */
+    margin-bottom: 15px;
+    padding: 20px; /*Ese sirve para meter espacios al interior dela seccion o recuadro, ubica mejor el contenido interno*/
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.project-course,
+.project_date,
+.project_url{
+    margin: 10px 0;
+}
+.project_description{
+    font-size: 20px;
+}
+.project strong
+{
+    font-family: "Fjalla One", sans-serif;
+}
+{
+    margin: 10px 0;
+}
+.project_tittle{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px 0;
+    align-items: center ;
+
+}
+.project_details
+{
+    width: 500px;
+    height: auto;
+    
+}
+.project_imageContainer
+{
+    width: 500px;
+
+}
+.header
+{
+    background-color: #1b2127;
+    color: white; /*Color sirve para asignar color solo alos textos*/
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+    height: 70px;
+    align-items: center;
+
+}
+figure{
+    margin: 0;
+}
+.menu{
+    height: inherit;
+}
+li,
+ol{
+    margin: 0;
+    padding: 0;
+    list-style:none; /*numero que sale en el listado del menu*/
+    height: inherit;
+}
+.header ol li{
+    height: inherit;
+}
+.header ol
+{
+    display: flex;
+    height: inherit;
+}
+.header a /* selector descendente para indicar el ancla (a) dentro del header, que es al que le quiero cambiar el color*/
+{
+    color: white;
+    text-decoration: none; /*quita el subrayado que trae por defecto el link*/
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0 10px;
+}
+.portfolio  
+{
+    background: #fafafa;
+    padding: 20px;
+
+ }
+.footer{
+    background-color: #1b2127 ;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    padding-right: 10px;
+}
+.footer img{ /*selector de la imagen que esta en el footer*/
+    vertical-align: middle; /*Prop para alinear imagenes que van con textos*/
+}
+.footer a{
+    color: white;
+}
+h2
+{
+    color: #026fff;
+    text-transform: uppercase;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+.event 
+{
+    /* border: 1px solid red;*/
+    margin:10px;
+    width: 480px;
+    border-radius: 10px;
+    overflow: hidden; /*oculta un objeto cuando se desborda*/
+    flex-shrink: 0;
+    background-attachment: #f4fbff;
+}
+.event_list{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.event img{
+    width: 480px;
+    height: 200px;
+    object-fit: cover; /*cuadra la imagen para que se veabien, proporcionada*/
+    /* border-radius: 10px; */
+}
+.event_detail{
+    margin: 20px 40px;
+    margin-top:-40px;
+    background-color: white;
+    position: relative; /*superpone elementos sobre otros*/
+    padding:20px;
+    text-align: center; /*alineacion de los textos*/   
+}
+.event_description{
+    text-align: left;
+}
+.event_url
+{
+    border: 1px solid #056fff;
+    padding: 5px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color:  #056fff;
+}
+.event_listTittle{
+    margin: 20px;
+}
+.contact{
+    background-color: #056FFF;
+    color: white ;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social{
+
+}
+.social_link{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+
+}
+.social_link.twitter{  /* como deje un espacio, lepongo un puntito para que me traiga la claseque quiero, esto sirve para cuando se repiten*/
+    background-image: url("../images/twitter.svg");  /*.svg imagenes que no se van apixelar*/ 
+   background-size: 50px 50px;
+   }
+   .social_link.facebook{ 
+       background-image: url("../images/facebook.svg");  /*.svg imagenes que no se van apixelar*/ 
+      background-size: 50px 50px;
+   }
+   .social_link.github{ 
+       background-image: url("../images/github.svg");  /*.svg imagenes que no se van apixelar*/ 
+       background-size: 50px 50px;
+   }
+   .social_link.instagram{ 
+       background-image: url("../images/instagram.svg");  /*.svg imagenes que no se van apixelar*/ 
+      background-size: 50px 50px;
+   }
+   .form_email input{
+       border-color: grey;
+       padding: 10px 20px 10px 25px;
+       border-radius: 5px;
+       border-style: solid;
+       background-image: url("../images/envelope.svg");
+       background-size: 15px 15px;
+       background-repeat: no-repeat;
+       background-position-y:center ;
+       background-position-x: 5px;
+   } 
+
+.form_email button{
+    display: block; 
+    margin: 10px 11px 12px;
+    background: transparent;
+    color: white;
+    padding: 10px 0px;
+    border-radius: 5px;
+    width: 100px ;
+    /* margin: 10px auto 0; */
+}
+.form_email h3{
+    font-family: "Source sans pro", sans-serif;
+}
+.container {
+    /* border: 1px solid red; */
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit; /*debo heredarle esta prop de los elementos padres*/
+    align-items: inherit; /*debo heredarle esta prop de los elementos padres*/
+    height: inherit; /*debo heredarle esta prop de los elementos padres*/
+    flex-wrap: inherit; /*debo heredarle esta prop de los elementos padres*/
+}
+ 

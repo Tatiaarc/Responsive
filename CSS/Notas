@@ -1,0 +1,30 @@
+Notas sobre FLEXBOX
+
+En html:
+
+    <div class="flexbox"> - Etq padre
+        <div class="box"> </div> - Etq hijos
+        <div class="box"> </div>
+        <div class="box"> </div>
+
+    </div>
+
+En css 
+
+.flexbox
+{
+    display: flex; /*prop para que el elemento se muestre de la forma que se requiera segun el espacio*/
+    flex-wrap: wrap; /*  el wrap hace que el elemento si no cabe se ubique al lado*/
+}
+
+
+.box    
+{
+    background: white;
+    width: 40px;
+    height: 40px;
+    border: 1px solid red;
+    margin: 10px;
+    flex-shrink: 0; /* prop para indicar que el elemento no sepuede encoger, debe respetar el tamaño asignado, va de 0 a 1*/
+
+}
