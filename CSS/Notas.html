@@ -1,0 +1,18 @@
+Formas de incluir media queries:
+1. Relacionando a una hoja de estilos especial para eso:
+    <link rel="stylesheet" href="css/media.css" media="screen and (max-width:768px)"/> 
+2. En la misma hoja de estillos principal:
+    <link rel="stylesheet" href="./CSS/Estilos.css">
+    @media screen and (max-width: 768px){
+    body{
+        border: 10px solid blue;
+    }
+    }
+3. Agregando la etiqueta <style></style>
+<style>
+    @media screen and (max-width: 768px) {
+        body{
+            border: 10px solid green;  
+        }
+    }
+    </style>

@@ -48,6 +48,7 @@ h1 strong
     display: flex;
     align-items: center;
     justify-content: space-between ;
+    flex-wrap: wrap;
 }
 .hero_image{
     object-fit: cover;
@@ -73,6 +74,7 @@ h1 strong
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 
 }
 .project-course,
@@ -117,6 +119,7 @@ h1 strong
     align-items: center;
     height: 70px;
     align-items: center;
+    flex-wrap: wrap;
 
 }
 figure{
@@ -163,6 +166,7 @@ ol{
     justify-content: space-between;
     padding: 10px;
     padding-right: 10px;
+    flex-wrap: wrap;
 }
 .footer img{ /*selector de la imagen que esta en el footer*/
     vertical-align: middle; /*Prop para alinear imagenes que van con textos*/
@@ -290,6 +294,11 @@ h2
     justify-content: inherit; /*debo heredarle esta prop de los elementos padres*/
     align-items: inherit; /*debo heredarle esta prop de los elementos padres*/
     height: inherit; /*debo heredarle esta prop de los elementos padres*/
-    flex-wrap: inherit; /*debo heredarle esta prop de los elementos padres*/
+    flex-wrap: wrap; /*debo heredarle esta prop de los elementos padres*/
 }
  
+@media screen and (max-width: 768px){
+    body{
+        border: 10px solid blue;
+    }
+}
