@@ -102,7 +102,6 @@ h1 strong
 .project_details
 {
     width: 50%;
-    height: auto;
     
 }
 .project_imageContainer
@@ -111,6 +110,9 @@ h1 strong
 }
 .project_imageContainer img {
     max-width: 100%;
+}
+.project_imageContainer img {
+max-width: 100%;
 }
 .header
 {
@@ -188,8 +190,8 @@ h2
 .event 
 {
     /* border: 1px solid red;*/
-    margin:10px;
-    width: 480px;
+    margin:1%;
+    width: 48%;
     border-radius: 10px;
     overflow: hidden; /*oculta un objeto cuando se desborda*/
     flex-shrink: 0;
@@ -327,15 +329,69 @@ h2
     }
     .project_details{
         width: auto;
+        font-size: 16px;
+    }
+    .project_tittle{
+        font-size: 1em;
+        margin-bottom: 0.3em;
+    }
+    .project-course{
+        font-size: 0.5em;
+    }
+    .project_date{
+        font-size: 1em;
+    }
+    .project_url{
+        font-size: 1em;
+    }
+    .project_description{
+        font-size: 1em;
+    }
+    .project_date, .project_url, .project_course{
+        margin: 0.5em 0;
+    }
+    .event{
+        width: auto;
+        flex-shrink: initial;
+        }
+    .event img{
+        width: 100%;
+    }
+    .contact{
+        height: auto;
+        padding: 1.5em 0;
+        text-align: center;
+        display: block;
+    }
+    .form_email button{
+        margin: 1em auto;
+    }
+    .form_email h3{
+        margin-top: 0;
+    }
+    .footer{
+        display: block;
+        text-align: center;
+        border: 1px solid transparent;
     }
 }
 
 @media screen and (max-width: 1024px){
+    .container{
+        padding: 0 1em;
+    }
 
 }
 
 @media screen and (max-width: 480px){
+    .project_details{
+        font-size: 12px;
 
+    }
+    .event_detail{
+        margin: -2em 0.5em 0.5em;
+        padding: 1em;
+    }
 }
 
 @media screen and (max-width: 320px){
