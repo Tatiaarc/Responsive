@@ -101,14 +101,16 @@ h1 strong
 }
 .project_details
 {
-    width: 500px;
+    width: 50%;
     height: auto;
     
 }
 .project_imageContainer
 {
-    width: 500px;
-
+    width: 50%  ;
+}
+.project_imageContainer img {
+    max-width: 100%;
 }
 .header
 {
@@ -315,6 +317,16 @@ h2
     }
     .header .logo{
         text-align: center;
+    }
+    .project{
+        display: block;
+    }
+    .project_imageContainer{
+        width: auto;
+        text-align: center;
+    }
+    .project_details{
+        width: auto;
     }
 }
 
