@@ -301,6 +301,7 @@ h2
     height: inherit; /*debo heredarle esta prop de los elementos padres*/
     flex-wrap: wrap; /*debo heredarle esta prop de los elementos padres*/
 }
+
  
 @media screen and (max-width: 767px){
     .header{
@@ -401,6 +402,11 @@ h2
         font-size: 2em;
         z-index: 2;
     }
+    .html-video{
+        width: 100%;
+        height: auto;
+    }
+
 
 }
 
@@ -422,7 +428,7 @@ h2
 @media screen and (max-width: 320px){
     h1{
         font-size: 1.2em;
-        background: rgba(0, 0, 0, .5)
+        /*background: rgba(0, 0, 0, .5)*/
     }
     .hero{
         padding: 2em 1em;
