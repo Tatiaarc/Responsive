@@ -11,6 +11,7 @@
         <!--<link rel="stylesheet" href="css/media.css" media="screen and (max-width:768px)"/> Para pantallas que tengan de tamaño 768px o menos voy a traer esa hoja de estilos-->
     </head>
     <body> 
+        <i class="icon-menu"></i>
         <header class="header"> <!-- style="color: red; background: blue;" Etq para indicar estilos en linea Etq para indicar la cabecera de la pagina, parte superior-->
             <div class="container">
             <figure class="logo">  
@@ -69,16 +70,20 @@
                     </article>
                 </div>
             </section>
+            
             <div class="container">
             <h2 class="event_listTittle"> Más sobre mi Experiencia</h2>
             </div>
             <section id="eventos" class="event_list">
-                <div class="container">
-                    <video class="html-video" src="video.mp4" width="1024" height="729" controls></video>
-                <article class="event">
+              
+                <div class="container"> 
+ 
+                     <article class="event">
                     
                    <figure class="event_imageContainer"> <!-- Etq que agrupa a la etq de imagen, es la que la contiene-->
-                       <img class="event_image" src="images/platzi-conf.jpg" width="500" />
+                    <div class="flexible-video">            
+                            <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/LoKvxCSZw5w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
+                           </div>  
                    </figure>
                    <div class="event_detail" > 
                    <h3 class="event_tittle">PlatziConf Mexico 2018</h3>
@@ -88,15 +93,14 @@
                 </article>
                 <article class="event">
                         <figure class="event_imageContainer"> <!-- Etq que agrupa a la etq de imagen, es la que la contiene-->
-                            <img class="event_image" src="images/platzi-conf.jpg" width="500" />
+                           <video class="html-video" src="video.mp4" width="1024" height="729" controls></video>
                         </figure>
                         <div class="event_detail" > 
                         <h3 class="event_tittle">PlatziConf Mexico 2018</h3>
                         <p class="event_description">El evento mas grande sobre gente que quiere aprender de internet </p>
                         <a class="event_url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver plática</a> <!--Enlac Externo; el _blank hace que cargue en una paguina nueva -->
                          </div>  
-                </article>  
-                </div>
+                </article>                 </div>
             </section>
             <section id="contacto" class="contact">
                 <div class="container           ">
@@ -106,10 +110,11 @@
                 <button>Enviar</button> <!-- Taq del boton-->        
              </form>
                 <div class="social">
-                            <a href="http://twitter.com/leonidasesteban" class="social_link twitter"target="_blank" ></a>
-                            <a href="http://facebook.com/leonidas.esteban" class="social_link facebook"></a>
-                            <a href="http://github.com/leonidasesteban" class="social_link github"></a>
-                            <a href="http://instagram.com/leonidasesteban" class="social_link instagram"></a>
+                            <i class=""></i>
+                            <a href="http://twitter.com/leonidasesteban" class="icon-twitter"target="_blank" ></a>
+                            <a href="http://facebook.com/leonidas.esteban" class="icon-facebook" target="_blank"></a>
+                            <a href="http://github.com/leonidasesteban" class="icon-github" target="_blank"></a>
+                            <a href="http://instagram.com/leonidasesteban" class="icon-intagram" target="_blank"></a>
              </div>
             </div>  
             </section>
