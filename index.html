@@ -11,7 +11,7 @@
         <!--<link rel="stylesheet" href="css/media.css" media="screen and (max-width:768px)"/> Para pantallas que tengan de tamaño 768px o menos voy a traer esa hoja de estilos-->
     </head>
     <body> 
-        <i class="icon-menu"></i>
+        <i class="icon-menu burger-button" id="burger-menu"></i>
         <header class="header"> <!-- style="color: red; background: blue;" Etq para indicar estilos en linea Etq para indicar la cabecera de la pagina, parte superior-->
             <div class="container">
             <figure class="logo">  
@@ -129,5 +129,46 @@
                 </div>
             </div>
             </footer>
-    </body>
+            <script>
+                document.querySelector(".menu");
+            
+                const menu = document.querySelector(".menu");
+                const burgerButton = document.querySelector("#burger-menu")
+                const ipad = window.matchMedia("screen and (max-width: 767px)" );
+
+                //  console.log(menu);
+                //  console.log(burgerButton);
+
+
+                ipad.addListener(validation) //Invoca otra funcion dependiendo de cuando se activa o desactiva la funcion del matches del query, si es false o true. Escucha los cambios en el query
+
+                function validation(event){  //Funcion que invoca el query como tal. Event es el mismo query
+                    if(event.matches){  //Si se cumple el matches, se dispara la funcion hideShow
+                    burgerButton.addEventListener("click",hideShow); //Cuando escuche el click en la clase burgerButton∂, dispare la funcion hideShow
+                    } else {   //Si no se cumple, desactivar
+                        burgerButton.removeEventListener("click",hideShow);
+                    }
+                    console.log(event);   //Muestra los matches que suceden, avisa cuando es false
+                    
+                }
+
+                function hideShow(){
+                    if(menu.classList.contains("is-active")){   // Si la clase menu(traida con el selector) contiene la clase is-active, haga lo siguiente:
+
+                        menu.classList.remove("is-active"); // Remueva la clase is-active, es decir, quite el menu 
+                    }else
+                 menu.classList.add("is-active");   //Pero si no la contiene, agreguela, es decir muestre el menu
+                }
+
+
+                   
+                    // ipad.addListener(validation)
+
+                    // function validation(event){
+                    //    console.og("")     
+                    // }                 
+
+            </script>
+    
+        </body>
 </html>

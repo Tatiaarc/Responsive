@@ -403,6 +403,21 @@ h2
     background-image: url("../images/twitter.svg");  /*.svg imagenes que no se van apixelar*/ 
    background-size: 50px 50px;
    }
+   .burger-button{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0,0,.8);
+    border-radius: 50%; 
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    position: fixed;
+    z-index: 4;
+    left: 5px;
+    top: 5px;
+    color: white;
+    display: none;
+}
   
 @media screen and (max-width: 767px){
     .header{
@@ -418,9 +433,28 @@ h2
     }
     .header a{
         justify-content: center;
+        height: 40px;
+        font-size: 2em;
+        text-decoration-line: underline;
     }
     .header .logo{
         text-align: center;
+    }
+    .menu{
+        position: fixed;
+        background-color: rgba(5, 111, 255, 0.9) ;
+        z-index: 3;
+        top: 0px;
+        left: -100vw;            
+        width: 100vw;
+        bottom: 0;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        transition: .3s;
+    }
+    .menu.is-active{
+        left: 0;
     }
     .project{
         display: block;
@@ -476,6 +510,10 @@ h2
         text-align: center;
         border: 1px solid transparent;
     }
+    .burger-button{
+        display: block;
+    }
+
 }
 
 @media screen and (max-width: 1024px){
