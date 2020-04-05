@@ -514,9 +514,10 @@ h2
         display: block;
     }
 
+
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1023px){
     .container{
         padding: 0 1em;
     }
@@ -557,7 +558,11 @@ h2
         margin: -2em 0.5em 0.5em;
         padding: 1em;
     }
-
+    .social_link{
+        width: 40px;
+        height: 40px;
+        background-size: 100%;
+    }
 }
 
 @media screen and (max-width: 320px){
