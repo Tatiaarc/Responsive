@@ -418,6 +418,9 @@ h2
     color: white;
     display: none;
 }
+
+body { font-size: 16px }
+.body { font-size: 18px }
   
 @media screen and (max-width: 767px){
     .header{
@@ -517,7 +520,7 @@ h2
 
 }
 
-@media screen and (max-width: 1023px){
+@media screen and (max-width: 1023fpx){
     .container{
         padding: 0 1em;
     }
