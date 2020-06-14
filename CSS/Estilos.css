@@ -3,10 +3,9 @@
     background: pink ; Propiedad - Valores ; !important esto es para hacer que alun estilo destaque
     color: red  
 } */
-body
-{
-    font-family: "Source sans pro", sans-serif; /* Si el nombre del a fuente es de dos o mas palabras, debe llevar comillas*/
-    margin: 0;
+body {
+  font-family: "Source sans pro", sans-serif; /* Si el nombre del a fuente es de dos o mas palabras, debe llevar comillas*/
+  margin: 0;
 }
 
 h1, /* para aplicar lamismapropiedad a varios selectores diferentes, debo separarlos por coma , o sino lotoma como un selector descendente*/
@@ -14,566 +13,546 @@ h2,
 h3,
 h4,
 h5,
-h6
-{
-    font-family: "Fjalla One", sans-serif;
-    font-weight: normal;/* Peso de la fuente,que tan gruesa va a quedar*/
-    /*font-style: oblique;Estilo, italica..*/
+h6 {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: normal; /* Peso de la fuente,que tan gruesa va a quedar*/
+  /*font-style: oblique;Estilo, italica..*/
 }
-h1
-{
-    font-size: 40px;
-    line-height: 150% ; /* Se peude dejar el porcentaje,lo toma sobre el tamaño del a fuente, ejemplo 1 + el 50%del tamaño */
-    letter-spacing: -.2px; /*Determina elespacio entre las letras, # positivo se alejan , # negativo se acercan*/
-    /*text-transform: uppercase; /* cambiar de minusculas mayusculas, etc.*/
-    /*text-decoration: wavy; /*decorado del texto*/
-    color: white;
-    /* margin: 100px 520px 70px 30px ; el 520 ayuda a que no se sobrepongan las imagenes */
-    margin: 0;
+h1 {
+  font-size: 40px;
+  line-height: 150%; /* Se peude dejar el porcentaje,lo toma sobre el tamaño del a fuente, ejemplo 1 + el 50%del tamaño */
+  letter-spacing: -0.2px; /*Determina elespacio entre las letras, # positivo se alejan , # negativo se acercan*/
+  /*text-transform: uppercase; /* cambiar de minusculas mayusculas, etc.*/
+  /*text-decoration: wavy; /*decorado del texto*/
+  color: white;
+  /* margin: 100px 520px 70px 30px ; el 520 ayuda a que no se sobrepongan las imagenes */
+  margin: 0;
 }
-h1 strong
-{
-    color: #026fff;
+h1 strong {
+  color: #026fff;
 }
 
-
-.hero
-{
-    height: 300px;
-    /* background-image: url("../images/hero.jpg"); propiedad para agregar imagen como fono */
-    background-color:  #1b2127;
-    /* background-size: 500px 300px;  delimita el tamañao del bg, en este caso de la imagen
+.hero {
+  height: 300px;
+  /* background-image: url("../images/hero.jpg"); propiedad para agregar imagen como fono */
+  background-color: #1b2127;
+  /* background-size: 500px 300px;  delimita el tamañao del bg, en este caso de la imagen
     background-repeat: no-repeat; */
-    /* background-position-x: right; */
-    display: flex;
-    align-items: center;
-    justify-content: space-between ;
-    flex-wrap: wrap;
+  /* background-position-x: right; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.hero_image{
-    object-fit: cover;
+.hero_image {
+  object-fit: cover;
 }
-.project{
-    /* border-top: 10px solid red;Borde superior - Debe ir TAMAÑO - TIPO - ESTILO
+.project {
+  /* border-top: 10px solid red;Borde superior - Debe ir TAMAÑO - TIPO - ESTILO
     border-right: 10px solid green;
     border-left: 10px solid orange;
     border-bottom: 10px solid pink; */
-    /* border-top-color: red; Estas tres propiedades siempre deben estar presentes
+  /* border-top-color: red; Estas tres propiedades siempre deben estar presentes
     border-top-width:30px;
     border-top-style: double;
     border-bottom-color: pink; Estas tres propiedades siempre deben estar presentes
     border-bottom-width:30px;
     border-bottom-style: dashed; */
-    border-radius: 10px;/* Para poner borde redondo*/
-    border: 1px solid grey  ; /*borde normal*/
-    /* border-top-left-radius: 50px; sepuede alterar el borde de cada lado individualmente */
-    /* margin: 10px; */
-    margin-bottom: 15px;
-    padding: 20px; /*Ese sirve para meter espacios al interior dela seccion o recuadro, ubica mejor el contenido interno*/
-    background: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
+  border-radius: 10px; /* Para poner borde redondo*/
+  border: 1px solid grey; /*borde normal*/
+  /* border-top-left-radius: 50px; sepuede alterar el borde de cada lado individualmente */
+  /* margin: 10px; */
+  margin-bottom: 15px;
+  padding: 20px; /*Ese sirve para meter espacios al interior dela seccion o recuadro, ubica mejor el contenido interno*/
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .project-course,
 .project_date,
-.project_url{
-    margin: 10px 0;
+.project_url {
+  margin: 10px 0;
 }
-.project_description{
-    font-size: 20px;
+.project_description {
+  font-size: 20px;
 }
-.project strong
-{
-    font-family: "Fjalla One", sans-serif;
+.project strong {
+  font-family: "Fjalla One", sans-serif;
 }
-{
-    margin: 10px 0;
+ {
+  margin: 10px 0;
 }
-.project_tittle{
-    font-size: 30px;
-    margin-top: 0;
-    margin-bottom: 10px 0;
-    align-items: center ;
-
+.project_tittle {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 10px 0;
+  align-items: center;
 }
-.project_details
-{
-    width: 50%;
-    
+.project_details {
+  width: 50%;
 }
-.project_imageContainer
-{
-    width: 50%  ;
+.project_imageContainer {
+  width: 50%;
 }
 .project_imageContainer img {
-    max-width: 100%;
+  max-width: 100%;
 }
 .project_imageContainer img {
-max-width: 100%;
+  max-width: 100%;
 }
-.header
-{
-    background-color: #1b2127;
-    color: white; /*Color sirve para asignar color solo alos textos*/
-    display: flex;
-    justify-content: space-between;    
-    align-items: center;
-    height: 70px;
-    align-items: center;
-    flex-wrap: wrap;
-
+.header {
+  background-color: #1b2127;
+  color: white; /*Color sirve para asignar color solo alos textos*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  align-items: center;
+  flex-wrap: wrap;
 }
-figure{
-    margin: 0;
+figure {
+  margin: 0;
 }
-.menu{
-    height: inherit;
+.menu {
+  height: inherit;
 }
 li,
-ol{
-    margin: 0;
-    padding: 0;
-    list-style:none; /*numero que sale en el listado del menu*/
-    height: inherit;
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none; /*numero que sale en el listado del menu*/
+  height: inherit;
 }
-.header ol li{
-    height: inherit;
+.header ol li {
+  height: inherit;
 }
-.header ol
-{
-    display: flex;
-    height: inherit;
+.header ol {
+  display: flex;
+  height: inherit;
 }
-.header a /* selector descendente para indicar el ancla (a) dentro del header, que es al que le quiero cambiar el color*/
-{
-    color: white;
-    text-decoration: none; /*quita el subrayado que trae por defecto el link*/
-    display: flex;
-    align-items: center;
-    height: inherit;
-    padding: 0 10px;
+.header a /* selector descendente para indicar el ancla (a) dentro del header, que es al que le quiero cambiar el color*/ {
+  color: white;
+  text-decoration: none; /*quita el subrayado que trae por defecto el link*/
+  display: flex;
+  align-items: center;
+  height: inherit;
+  padding: 0 10px;
 }
-.portfolio  
-{
-    background: #fafafa;
-    padding: 20px;
-
- }
-.footer{
-    background-color: #1b2127 ;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    padding-right: 10px;
-    flex-wrap: wrap;
+.portfolio {
+  background: #fafafa;
+  padding: 20px;
 }
-.footer img{ /*selector de la imagen que esta en el footer*/
-    vertical-align: middle; /*Prop para alinear imagenes que van con textos*/
+.footer {
+  background-color: #1b2127;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  padding-right: 10px;
+  flex-wrap: wrap;
 }
-.footer a{
-    color: white;
+.footer img {
+  /*selector de la imagen que esta en el footer*/
+  vertical-align: middle; /*Prop para alinear imagenes que van con textos*/
 }
-h2
-{
-    color: #026fff;
-    text-transform: uppercase;
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: bold;
-    font-size: 24px;
-    margin-bottom: 40px;
+.footer a {
+  color: white;
 }
-.event 
-{
-    /* border: 1px solid red;*/
-    margin:1%;
-    width: 48%;
-    border-radius: 10px;
-    overflow: hidden; /*oculta un objeto cuando se desborda*/
-    flex-shrink: 0;
-    background-attachment: #f4fbff;
+h2 {
+  color: #026fff;
+  text-transform: uppercase;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 40px;
 }
-.event_list{
-    display: flex;
-    flex-wrap: wrap;
-
+.event {
+  /* border: 1px solid red;*/
+  margin: 1%;
+  width: 48%;
+  border-radius: 10px;
+  overflow: hidden; /*oculta un objeto cuando se desborda*/
+  flex-shrink: 0;
+  background-attachment: #f4fbff;
+}
+.event_list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.event img{
-    width: 480px;
-    height: 200px;
-    object-fit: cover; /*cuadra la imagen para que se veabien, proporcionada*/
-    /* border-radius: 10px; */
+.event img {
+  width: 480px;
+  height: 200px;
+  object-fit: cover; /*cuadra la imagen para que se veabien, proporcionada*/
+  /* border-radius: 10px; */
 }
-.event_detail{
-    margin: 20px 40px;
-    margin-top:-40px;
-    background-color: white;
-    position: relative; /*superpone elementos sobre otros*/
-    padding:20px;
-    text-align: center; /*alineacion de los textos*/   
+.event_detail {
+  margin: 20px 40px;
+  margin-top: -40px;
+  background-color: white;
+  position: relative; /*superpone elementos sobre otros*/
+  padding: 20px;
+  text-align: center; /*alineacion de los textos*/
 }
-.event_description{
-    text-align: left;
+.event_description {
+  text-align: left;
 }
-.event_url
-{
-    border: 1px solid #056fff;
-    padding: 5px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    color:  #056fff;
+.event_url {
+  border: 1px solid #056fff;
+  padding: 5px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #056fff;
 }
-.event_listTittle{
-    margin: 20px;
+.event_listTittle {
+  margin: 20px;
 }
-.contact{
-    background-color: #056FFF;
-    color: white ;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.contact {
+  background-color: #056fff;
+  color: white;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.social{
-
+.social {
 }
-.social_link{
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    margin: 0 10px;
-
+.social_link {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
 }
 
-   .social_link.facebook{ 
-       background-image: url("../images/facebook.svg");  /*.svg imagenes que no se van apixelar*/ 
-      background-size: 50px 50px;
-   }
-   .social_link.github{ 
-       background-image: url("../images/github.svg");  /*.svg imagenes que no se van apixelar*/ 
-       background-size: 50px 50px;
-   }
-   .social_link.instagram{ 
-       background-image: url("../images/instagram.svg");  /*.svg imagenes que no se van apixelar*/ 
-      background-size: 50px 50px;
-   }
-   .form_email input{
-       border-color: grey;
-       padding: 10px 20px 10px 25px;
-       border-radius: 5px;
-       border-style: solid;
-       background-image: url("../images/envelope.svg");
-       background-size: 15px 15px;
-       background-repeat: no-repeat;
-       background-position-y:center ;
-       background-position-x: 5px;
-   } 
-
-.form_email button{
-    display: block; 
-    margin: 10px 11px 12px;
-    background: transparent;
-    color: white;
-    padding: 10px 0px;
-    border-radius: 5px;
-    width: 100px ;
-    /* margin: 10px auto 0; */
+.social_link.facebook {
+  background-image: url("../images/facebook.svg"); /*.svg imagenes que no se van apixelar*/
+  background-size: 50px 50px;
 }
-.form_email h3{
-    font-family: "Source sans pro", sans-serif;
+.social_link.github {
+  background-image: url("../images/github.svg"); /*.svg imagenes que no se van apixelar*/
+  background-size: 50px 50px;
+}
+.social_link.instagram {
+  background-image: url("../images/instagram.svg"); /*.svg imagenes que no se van apixelar*/
+  background-size: 50px 50px;
+}
+.form_email input {
+  border-color: grey;
+  padding: 10px 20px 10px 25px;
+  border-radius: 5px;
+  border-style: solid;
+  background-image: url("../images/envelope.svg");
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+}
+
+.form_email button {
+  display: block;
+  margin: 10px 11px 12px;
+  background: transparent;
+  color: white;
+  padding: 10px 0px;
+  border-radius: 5px;
+  width: 100px;
+  /* margin: 10px auto 0; */
+}
+.form_email h3 {
+  font-family: "Source sans pro", sans-serif;
 }
 .container {
-    /* border: 1px solid red; */
-    max-width: 1000px;
-    flex: 1; /*Con este flex se adecua al 100% del tamañp disponible*/
-    margin: 0 auto;
-    display: inherit;
-    justify-content: inherit; /*debo heredarle esta prop de los elementos padres*/
-    align-items: inherit; /*debo heredarle esta prop de los elementos padres*/
-    height: inherit; /*debo heredarle esta prop de los elementos padres*/
-    flex-wrap: wrap; /*debo heredarle esta prop de los elementos padres*/
+  /* border: 1px solid red; */
+  max-width: 1000px;
+  flex: 1; /*Con este flex se adecua al 100% del tamañp disponible*/
+  margin: 0 auto;
+  display: inherit;
+  justify-content: center; /*debo heredarle esta prop de los elementos padres*/
+  align-items: inherit; /*debo heredarle esta prop de los elementos padres*/
+  height: inherit; /*debo heredarle esta prop de los elementos padres*/
+  flex-wrap: wrap; /*debo heredarle esta prop de los elementos padres*/
 }
-.html-video{
-    width: 100%;
-    height: auto;
+.html-video {
+  width: 100%;
+  height: auto;
 }
-.youtube-video{
-   position: absolute;
-   top: 0;
-   bottom: 0;
-   left: 0;
-   right:0 ;
-   width: 100%;
-   height: 100%;
-} 
+.youtube-video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
 
-.flexible-video{
-    width: 100%;
-    height: 0;
-    padding-top: 56.25%;
-    background: blue    ;
-    position: relative;
+.flexible-video {
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+  background: blue;
+  position: relative;
 }
 @font-face {
-    font-family: 'icomoon';
-    src:  url('../icomoon.eot?ptxp61');
-    src:  url('../fonts/icomoon.eot?ptxp61#iefix') format('embedded-opentype'),
-      url('../fonts/icomoon.ttf?ptxp61') format('truetype'),
-      url('../fonts/icomoon.woff?ptxp61') format('woff'),
-      url('../fonts/icomoon.svg?ptxp61#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
-  
-  [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-  
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .icon-menu:before {
-    content: "\e9bd";
-  }
-  @font-face {
-    font-family: 'icomoon';
-    src:  url('../fontsSM/icomoon.eot?8lams');
-    src:  url('../fontsSM/icomoon.eot?8lams#iefix') format('embedded-opentype'),
-      url('../fontsSM/icomoon.ttf?8lams') format('truetype'),
-      url('../fontsSM/icomoon.woff?8lams') format('woff'),
-      url('../fontsSM/icomoon.svg?8lams#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
-  
-  [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    text-decoration-line: none;
-  
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .icon-twitter:before {
-    content: "\e900";
-    font-size: 48px;
-    color: white;
+  font-family: "icomoon";
+  src: url("../icomoon.eot?ptxp61");
+  src: url("../fonts/icomoon.eot?ptxp61#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?ptxp61") format("truetype"),
+    url("../fonts/icomoon.woff?ptxp61") format("woff"),
+    url("../fonts/icomoon.svg?ptxp61#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
 
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e9bd";
+}
+@font-face {
+  font-family: "icomoon";
+  src: url("../fontsSM/icomoon.eot?8lams");
+  src: url("../fontsSM/icomoon.eot?8lams#iefix") format("embedded-opentype"),
+    url("../fontsSM/icomoon.ttf?8lams") format("truetype"),
+    url("../fontsSM/icomoon.woff?8lams") format("woff"),
+    url("../fontsSM/icomoon.svg?8lams#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  text-decoration-line: none;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter:before {
+  content: "\e900";
+  font-size: 48px;
+  color: white;
+}
+.icon-github:before {
+  content: "\e901";
+  font-size: 48px;
+  color: white;
+}
+.icon-intagram:before {
+  content: "\e902";
+  font-size: 48px;
+  color: white;
+}
+.icon-facebook:before {
+  content: "\e903";
+  font-size: 48px;
+  color: white;
+}
+
+.social_link.twitter {
+  /* como deje un espacio, lepongo un puntito para que me traiga la claseque quiero, esto sirve para cuando se repiten*/
+  background-image: url("../images/twitter.svg"); /*.svg imagenes que no se van apixelar*/
+  background-size: 50px 50px;
+}
+.burger-button {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+  display: block;
+  line-height: 40px;
+  text-align: center;
+  position: fixed;
+  z-index: 4;
+  left: 5px;
+  top: 5px;
+  color: white;
+  display: none;
+}
+
+body {
+  font-size: 16px;
+}
+.body {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    display: block;
+    height: auto;
   }
-  .icon-github:before {
-    content: "\e901";
-    font-size: 48px;
-    color: white;   
+  .header ol {
+    display: initial;
   }
-  .icon-intagram:before {
-    content: "\e902";
-    font-size: 48px;
-    color: white;
+  .header ol li {
+    height: 50px;
+    text-align: center;
   }
-  .icon-facebook:before {
-    content: "\e903";
-    font-size: 48px;
-    color: white;
+  .header a {
+    justify-content: center;
+    height: 40px;
+    font-size: 2em;
+    text-decoration-line: underline;
   }
-  
-  .social_link.twitter{  /* como deje un espacio, lepongo un puntito para que me traiga la claseque quiero, esto sirve para cuando se repiten*/
-    background-image: url("../images/twitter.svg");  /*.svg imagenes que no se van apixelar*/ 
-   background-size: 50px 50px;
-   }
-   .burger-button{
+  .header .logo {
+    text-align: center;
+  }
+  .menu {
+    position: fixed;
+    background-color: rgba(5, 111, 255, 0.9);
+    z-index: 3;
+    top: 0px;
+    left: -100vw;
+    width: 100vw;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    transition: 0.3s;
+  }
+  .menu.is-active {
+    left: 0;
+  }
+  .project {
+    display: block;
+  }
+  .project_imageContainer {
+    width: auto;
+    text-align: center;
+  }
+  .project_details {
+    width: auto;
+    font-size: 16px;
+  }
+  .project_tittle {
+    font-size: 1em;
+    margin-bottom: 0.3em;
+  }
+  .project-course {
+    font-size: 0.5em;
+  }
+  .project_date {
+    font-size: 1em;
+  }
+  .project_url {
+    font-size: 1em;
+  }
+  .project_description {
+    font-size: 1em;
+  }
+  .project_date,
+  .project_url,
+  .project_course {
+    margin: 0.5em 0;
+  }
+  .event {
+    width: auto;
+    flex-shrink: initial;
+  }
+  .event img {
+    width: 100%;
+  }
+  .contact {
+    height: auto;
+    padding: 1.5em 0;
+    text-align: center;
+    display: block;
+  }
+  .form_email button {
+    margin: 1em auto;
+  }
+  .form_email h3 {
+    margin-top: 0;
+  }
+  .footer {
+    display: block;
+    text-align: center;
+    border: 1px solid transparent;
+  }
+  .burger-button {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .container {
+    padding: 0 1em;
+  }
+  .hero {
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 2em;
+  }
+  .hero_image {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2em;
+    z-index: 2;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  .project_details {
+    font-size: 12px;
+  }
+  .event_detail {
+    margin: -2em 0.5em 0.5em;
+    padding: 1em;
+  }
+  .social_link {
     width: 40px;
     height: 40px;
-    background-color: rgba(0, 0,0,.8);
-    border-radius: 50%; 
-    display: block;
-    line-height: 40px;
-    text-align: center;
-    position: fixed;
-    z-index: 4;
-    left: 5px;
-    top: 5px;
-    color: white;
-    display: none;
+    background-size: 100%;
+  }
 }
 
-body { font-size: 16px }
-.body { font-size: 18px }
-  
-@media screen and (max-width: 767px){
-    .header{
-        display: block;
-        height: auto;
-    }
-    .header ol{
-        display: initial;
-    }
-    .header ol li{
-        height: 50px;
-        text-align: center;
-    }
-    .header a{
-        justify-content: center;
-        height: 40px;
-        font-size: 2em;
-        text-decoration-line: underline;
-    }
-    .header .logo{
-        text-align: center;
-    }
-    .menu{
-        position: fixed;
-        background-color: rgba(5, 111, 255, 0.9) ;
-        z-index: 3;
-        top: 0px;
-        left: -100vw;            
-        width: 100vw;
-        bottom: 0;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        transition: .3s;
-    }
-    .menu.is-active{
-        left: 0;
-    }
-    .project{
-        display: block;
-    }
-    .project_imageContainer{
-        width: auto;
-        text-align: center;
-    }
-    .project_details{
-        width: auto;
-        font-size: 16px;
-    }
-    .project_tittle{
-        font-size: 1em;
-        margin-bottom: 0.3em;
-    }
-    .project-course{
-        font-size: 0.5em;
-    }
-    .project_date{
-        font-size: 1em;
-    }
-    .project_url{
-        font-size: 1em;
-    }
-    .project_description{
-        font-size: 1em;
-    }
-    .project_date, .project_url, .project_course{
-        margin: 0.5em 0;
-    }
-    .event{
-        width: auto;
-        flex-shrink: initial;
-        }
-    .event img{
-        width: 100%;
-    }
-    .contact{
-        height: auto;
-        padding: 1.5em 0;
-        text-align: center;
-        display: block;
-    }
-    .form_email button{
-        margin: 1em auto;
-    }
-    .form_email h3{
-        margin-top: 0;
-    }
-    .footer{
-        display: block;
-        text-align: center;
-        border: 1px solid transparent;
-    }
-    .burger-button{
-        display: block;
-    }
-
-
-}
-
-@media screen and (max-width: 1023fpx){
-    .container{
-        padding: 0 1em;
-    }
-    .hero{
-        height: auto;
-        position: relative;
-        overflow: hidden;
-        padding: 2em;
-
-    }
-    .hero_image{
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0; 
-        z-index: 1;
-        width: 100%     ;
-    }
-    
-    h1{
-        font-size: 2em;
-        z-index: 2;
-    }
-
-
-}
-
-@media screen and (max-width: 480px){
-    h1{
-        font-size: 1.5em;
-    }
-    .project_details{
-        font-size: 12px;
-
-    }
-    .event_detail{
-        margin: -2em 0.5em 0.5em;
-        padding: 1em;
-    }
-    .social_link{
-        width: 40px;
-        height: 40px;
-        background-size: 100%;
-    }
-}
-
-@media screen and (max-width: 320px){
-    h1{
-        font-size: 1.2em;
-        /*background: rgba(0, 0, 0, .5)*/
-    }
-    .hero{
-        padding: 2em 1em;
-    }
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: 1.2em;
+    /*background: rgba(0, 0, 0, .5)*/
+  }
+  .hero {
+    padding: 2em 1em;
+  }
 }
